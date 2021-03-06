@@ -3,55 +3,31 @@ import React, { Component } from 'react'
 export default class Header extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-sm   navbar-light bg-light">
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon" />
-  </button>
-  <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li className="nav-item">
-        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">About</a>
-      </li>
-      <li className="nav-item dropdown dmenu">
-        <a className="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-          Our Service
-        </a>
-        <div className="dropdown-menu sm-menu">
-          <a className="dropdown-item" href="#">service2</a>
-          <a className="dropdown-item" href="#">service 2</a>
-          <a className="dropdown-item" href="#">service 3</a>
-        </div>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Contact Us</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Call</a>
-      </li>
-      {/* <li class="nav-item dropdown dmenu">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Dropdown link
-      </a>
-      <div class="dropdown-menu sm-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
-        <a class="dropdown-item" href="#">Link 4</a>
-        <a class="dropdown-item" href="#">Link 5</a>
-        <a class="dropdown-item" href="#">Link 6</a>
-      </div>
-    </li> */}
-    </ul>
-    <div className="social-part">
-      <i className="fa fa-facebook" aria-hidden="true" />
-      <i className="fa fa-twitter" aria-hidden="true" />
-      <i className="fa fa-instagram" aria-hidden="true" />
+            <header id="header" className="fixed-top">
+  <div className="container-fluid d-flex justify-content-between align-items-center">
+    <h1 className="logo me-auto me-lg-0"><a href="index.html">Kelly</a></h1>
+    {/* Uncomment below if you prefer to use an image logo */}
+    {/* <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>*/}
+    <nav id="navbar" className="navbar order-last order-lg-0">
+      <ul>
+        <li><a className="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <i className="bi bi-list mobile-nav-toggle" />
+    </nav>{/* .navbar */}
+    <div className="header-social-links">
+      <a href="#" className="twitter"><i className="bi bi-twitter" /></a>
+      <a href="#" className="facebook"><i className="bi bi-facebook" /></a>
+      <a href="#" className="instagram"><i className="bi bi-instagram" /></a>
+      <a href="#" className="linkedin"><i className="bi bi-linkedin" /></a>
     </div>
   </div>
-</nav>
+</header>
+
 
         )
     }
